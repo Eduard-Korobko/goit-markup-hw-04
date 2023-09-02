@@ -308,11 +308,11 @@ a{
 .social-icon{
                 fill: var(--cloud);
 }
-
-.team-social-list-item:hover .social-link,
-.team-social-list-item:focus .social-link {
-                                                 background-color:var(--ocean);
+.social-link:hover,
+.social-link:focus {
+                        background-color: var(--ocean);
 }
+
 /* ===== 4 Секция Наши Портфолио ===== */
 .portfolio-list{
                 display: flex;
@@ -420,7 +420,7 @@ transition: box-shadow var(--time-transition) var(--cubic-transition);
                                 display: flex;
                                 gap: 16px;
 }
-.footer-social-list-item:hover .social-link,
-.footer-social-list-item:focus .social-link {
-                                                background-color: var(--green);
+.footer .social-link:hover,
+.footer .social-link:focus {
+                                background-color: var(--green);
 }
