@@ -65,6 +65,7 @@ a{
 .header{
         border-bottom: 1px solid #E7E9FC;
         background-color:var(--white);
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
         transition: color var(--time-transition) var(--cubic-transition);
         }
 
@@ -152,8 +153,10 @@ a{
 .hero{
         background:#2E2F42;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/people-office.jpg);
-        background-size: 1440px;
+        max-width: 1440px;
         background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
         padding: 188px 0;
         text-align: center;
 }
@@ -311,7 +314,7 @@ a{
 
 .team-social-list-item:hover .social-link,
 .team-social-list-item:focus .social-link {
-                                                 background-color: var(--green);
+                                                 background-color:var(--ocean);
 }
 /* ===== Наши Портфолио ===== */
 .portfolio-list{
@@ -356,11 +359,13 @@ a{
                                         cursor: pointer;
                                         transform: translateY(0);
 }
-
-.portfolio-list-item:hover .project-card {
-                                        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-                                        cursor: pointer;
-        }
+.portfolio-list-item{
+transition: box-shadow var(--time-transition) var(--cubic-transition);
+}
+.portfolio-list-item:hover {
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+        cursor: pointer;
+}
 /* ===== Секция Футер ===== */
 .footer{
         background: #2E2F42;
@@ -400,6 +405,7 @@ a{
 
 .footer .container{
                         display: flex;
+                        align-items: baseline;
 }
 
 .footer-logo-text{
