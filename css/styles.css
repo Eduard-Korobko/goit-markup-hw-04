@@ -11,9 +11,6 @@
 
         --time-transition: 250ms;
         --cubic-transition: cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
 }
 body {
         font-family: "Roboto", sans-serif;
@@ -316,7 +313,7 @@ a{
 .team-social-list-item:focus .social-link {
                                                  background-color:var(--ocean);
 }
-/* ===== Наши Портфолио ===== */
+/* ===== 4 Секция Наши Портфолио ===== */
 .portfolio-list{
                 display: flex;
                 flex-wrap: wrap;
